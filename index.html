@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="Description" content="Enter your description here"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="static/js/racerhelper.js"></script>
+        <script src="static/js/api.js" defer></script>
+        <link rel="stylesheet" href="static/css/main.css">
+        <title>Charles Leclerc Data</title>
+</head>
+<body>
+    <!--Ranger Data HTML Elements-->
+    <div class="thegrid">
+        <div class="logo">
+            <img src="static/images/logo.jpg" alt="Logo">
+        </div>
+        <div class="buttons mt-4">
+            <form name="apiCallForm" id="apiCallForm">
+                <label for="season">What season?</label>
+                <input type="text" name="season" id="season">
+                <br>
+                <label for="round">What round?</label>
+                <input type="text" name="round" id="round">
+                <br>
+                <button type="submit" id="submitButton">Submit</button>
+            </form>
+            <button class="btn btn-danger" onclick="clear_data()">Clear Data</button>
+        </div>
+        <div class="banana">
+            <img id="suit" src="static/images/leclercbanana.jpg" alt="">
+        </div>
+        <div class="car">
+            <img id="ferrari" src="static/images/leclercferrari.jpg" alt="">
+        </div>
+        <div class="info">
+            
+        </div>
+        <div class="data">
+            <div class="container">
+                <div class="row">
+                    <section class="list-group driver-list">
+                        <!-- Each driver html tag will go in this list -->
+                    </section>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"></script>
+</body>
+</html>
